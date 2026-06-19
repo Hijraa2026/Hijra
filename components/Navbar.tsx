@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav style={{ background: "var(--cream)", borderBottom: "0.5px solid var(--border)" }}
-      className="sticky top-0 z-50 px-6 md:px-12 py-5 flex items-center justify-between">
+      className="sticky top-0 z-50 px-6 md:px-12 py-8 flex items-center justify-between">
 
       <div className="hidden md:flex gap-8 text-sm" style={{ color: "var(--muted)", letterSpacing: "1px" }}>
         <a href="#" className="hover:text-[var(--mocha)] transition-colors">Nouveautés</a>
