@@ -4,6 +4,12 @@ const products = [
   { id: 1, name: "Robe Linéa", description: "Col montant · coupe ample", price: 59 },
   { id: 2, name: "Ensemble Sahel", description: "Veste + pantalon large", price: 89 },
   { id: 3, name: "Blouse Nour", description: "Manches longues · fluide", price: 45 },
+  { id: 4, name: "Manteau import ProductCard from "./ProductCard";
+
+const products = [
+  { id: 1, name: "Robe Linéa", description: "Col montant · coupe ample", price: 59 },
+  { id: 2, name: "Ensemble Sahel", description: "Veste + pantalon large", price: 89 },
+  { id: 3, name: "Blouse Nour", description: "Manches longues · fluide", price: 45 },
   { id: 4, name: "Manteau Farah", description: "Long · ceinturé · chic", price: 110 },
   { id: 5, name: "Robe Safa", description: "Coupe droite · col rond", price: 65 },
   { id: 6, name: "Ensemble Warda", description: "Pantalon + tunique", price: 95 },
