@@ -7,11 +7,7 @@ export default function Navbar() {
 
   return (
     <nav style={{ background: "var(--cream)", borderBottom: "0.5px solid var(--border)" }}
-      className="sticky top-0 z-50 px-6 md:px-12 py-4 flex items-center justify-between">
-
-      <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <X size={20} color="var(--mocha)" /> : <Menu size={20} color="var(--mocha)" />}
-      </button>
+      className="sticky top-0 z-50 px-6 md:px-12 py-5 flex items-center justify-between">
 
       <div className="hidden md:flex gap-8 text-sm" style={{ color: "var(--muted)", letterSpacing: "1px" }}>
         <a href="#" className="hover:text-[var(--mocha)] transition-colors">Nouveautés</a>
@@ -20,11 +16,15 @@ export default function Navbar() {
       </div>
 
       <div className="flex flex-col items-center gap-1 absolute left-1/2 -translate-x-1/2">
-        <div style={{ width: "120px", height: "0.5px", background: "var(--mocha)" }} />
-        <span className="font-playfair text-xl" style={{ color: "var(--mocha-dark)", letterSpacing: "10px" }}>HIJRA</span>
-        <div style={{ width: "120px", height: "0.5px", background: "var(--mocha)" }} />
-        <span className="font-playfair italic text-[9px]" style={{ color: "var(--muted)", letterSpacing: "5px" }}>modest fashion</span>
+        <div style={{ width: "140px", height: "0.5px", background: "var(--mocha)" }} />
+        <span className="font-playfair text-2xl font-normal" style={{ color: "var(--mocha-dark)", letterSpacing: "8px" }}>HIJRA</span>
+        <div style={{ width: "140px", height: "0.5px", background: "var(--mocha)" }} />
+        <span className="font-playfair italic" style={{ fontSize: "9px", color: "var(--muted)", letterSpacing: "5px" }}>modest fashion</span>
       </div>
+
+      <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <X size={20} color="var(--mocha)" /> : <Menu size={20} color="var(--mocha)" />}
+      </button>
 
       <div className="flex gap-4" style={{ color: "var(--mocha)" }}>
         <button className="hover:opacity-70 transition-opacity"><Search size={18} /></button>
