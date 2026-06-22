@@ -1,5 +1,4 @@
-Maintenant components/Hero.tsx — remplace tout par :
-tsxexport default function Hero() {
+export default function Hero() {
   return (
     <>
       <section style={{ background: "#FFFCF9" }}
