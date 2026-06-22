@@ -15,17 +15,23 @@ const products = [
 
 export default function Collection() {
   return (
-    <section id="collection" className="px-6 md:px-16 py-20" style={{ background: "var(--cream)" }}>
-      <div className="flex items-center justify-center gap-6 mb-16">
-        <div style={{ width: "32px", height: "0.5px", background: "var(--caramel)" }} />
-        <span className="font-playfair italic" style={{ fontSize: "11px", color: "var(--muted)", letterSpacing: "6px" }}>
+    <section id="collection" style={{ background: "#FFFCF9" }} className="px-8 md:px-10 py-16">
+      <div className="flex items-center gap-4 mb-10">
+        <div style={{ flex: 1, height: "0.5px", background: "#EAE0D5" }} />
+        <span className="font-playfair italic" style={{ fontSize: "11px", color: "#9C8270", letterSpacing: "5px" }}>
           nos articles
         </span>
-        <div style={{ width: "32px", height: "0.5px", background: "var(--caramel)" }} />
+        <div style={{ flex: 1, height: "0.5px", background: "#EAE0D5" }} />
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-10">
         {products.map(p => <ProductCard key={p.id} product={p} />)}
+      </div>
+
+      <div className="text-center mt-10">
+        <button style={{ background: "transparent", color: "#1A0F0A", border: "0.5px solid #1A0F0A", padding: "12px 32px", fontSize: "11px", letterSpacing: "2px", cursor: "pointer" }}>
+          VOIR TOUT
+        </button>
       </div>
     </section>
   );
